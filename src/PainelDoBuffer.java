@@ -8,14 +8,14 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 
 
-public class Painel1 extends JPanel {
+public class PainelDoBuffer extends JPanel {
 
 	int coordeX,coordeY;
 	
 	
 	BufferedImage buffer = new BufferedImage(550,500,BufferedImage.TYPE_INT_RGB);
 	
-	public Painel1() {
+	public PainelDoBuffer() {
 		
 		
 		setBounds(new Rectangle(0, 0, 550, 500));
@@ -189,6 +189,7 @@ public class Painel1 extends JPanel {
 						
 					}
 
+					repaint();
 		}catch(Exception e){
 			
 			JOptionPane.showMessageDialog(null, "Ocorreu um erro ao desenhar a reta!");

@@ -62,7 +62,7 @@ public class Plotte extends JFrame {
 		//JPanel painel1 = new JPanel();
 		//painel1.setBorder(new LineBorder(new Color(0, 0, 0)));
 		
-		Painel1 painel1 = new Painel1();
+		PainelDoBuffer painel1 = new PainelDoBuffer();
 		
 		//painel1.setY(25);
 		//painel1.setX(25);
@@ -81,6 +81,10 @@ public class Plotte extends JFrame {
 		JLabel label3 = new JLabel("0");
 		label3.setBounds(666, 148, 72, 49);
 		framePrincipal.add(label3);
+		
+		JLabel label4 = new JLabel("0");
+		label4.setBounds(666, 208, 72, 49);
+		framePrincipal.add(label4);
 		
 		textFieldX1 = new JTextField();
 		textFieldX1.setBounds(625, 388, 72, 20);
@@ -107,17 +111,6 @@ public class Plotte extends JFrame {
 		labelY.setBounds(100, 534, 34, 28);
 		framePrincipal.add(labelY);
 		
-		JLabel label4 = new JLabel("0");
-		label4.setBounds(666, 208, 72, 49);
-		framePrincipal.add(label4);
-		
-		JButton botaoPlotarPixel = new JButton("Plotar");
-		botaoPlotarPixel.setBounds(595, 465, 89, 23);
-		framePrincipal.add(botaoPlotarPixel);
-		
-		JButton btnLimparTela = new JButton("Limpar");
-		btnLimparTela.setBounds(595, 499, 89, 23);
-		framePrincipal.add(btnLimparTela);
 		
 		JLabel lblNewLabel = new JLabel("X1:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -145,6 +138,16 @@ public class Plotte extends JFrame {
 		lblDcy_1.setBounds(595, 225, 46, 14);
 		framePrincipal.add(lblDcy_1);
 		
+		JLabel lblX = new JLabel("X2:");
+		lblX.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblX.setBounds(720, 391, 25, 14);
+		framePrincipal.add(lblX);
+		
+		JLabel lblY_1 = new JLabel("Y2:");
+		lblY_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblY_1.setBounds(720, 422, 25, 14);
+		framePrincipal.add(lblY_1);
+		
 		textFieldX2 = new JTextField();
 		textFieldX2.setColumns(10);
 		textFieldX2.setBounds(750, 388, 72, 20);
@@ -155,15 +158,14 @@ public class Plotte extends JFrame {
 		textFieldY2.setBounds(750, 419, 72, 20);
 		framePrincipal.add(textFieldY2);
 		
-		JLabel lblX = new JLabel("X2:");
-		lblX.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblX.setBounds(720, 391, 25, 14);
-		framePrincipal.add(lblX);
 		
-		JLabel lblY_1 = new JLabel("Y2:");
-		lblY_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblY_1.setBounds(720, 422, 25, 14);
-		framePrincipal.add(lblY_1);
+		JButton botaoPlotarPixel = new JButton("Plotar");
+		botaoPlotarPixel.setBounds(595, 465, 89, 23);
+		framePrincipal.add(botaoPlotarPixel);
+		
+		JButton btnLimparTela = new JButton("Limpar");
+		btnLimparTela.setBounds(595, 499, 89, 23);
+		framePrincipal.add(btnLimparTela);
 		
 		JButton botaoPlotarReta = new JButton("Reta");
 		botaoPlotarReta.setBounds(703, 465, 89, 23);
